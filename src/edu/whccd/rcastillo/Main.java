@@ -15,7 +15,7 @@ public class Main {
 
 
         // 3. fix the logic error so it calls the getDouble() on the 100th iteration
-        for (int i = 1; i < 100; i++) {
+        for (int i = 1; i <= 100; i++) {
             if (i == 100) // was 50, changed to 100
             {
                 Scanner sc = new Scanner(System.in);
@@ -33,7 +33,7 @@ public class Main {
             System.out.print(prompt); // missing SemiColon
 
             if (sc.hasNextDouble()) { //missing right bracket
-                d = sc.NextDouble();
+                d = sc.nextDouble();
                 sc.nextLine();
                 return d;
             } else {
